@@ -1,0 +1,1 @@
+console.log("Planet Information project loaded.");
