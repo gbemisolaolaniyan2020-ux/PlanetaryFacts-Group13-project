@@ -24,12 +24,12 @@ The project is a responsive web app that fetches planet data from an API and dis
 * Figma — Design reference
 
 ## Group Members
-- [Gbemisola Olaniyan] (https://github.com/gbemisolaolaniyan2020-ux)
-- [Sekinat Olaide Abdulrazaq] (https://github.com/olaidesekinat04-byte)
+- [Gbemisola Olaniyan] (https://github.com/gbemisolaolaniyan2020-ux)-Team lead
+- [Sekinat Olaide Abdulrazaq] (https://github.com/olaidesekinat04-byte)-Assistant Team Lead
 - [Showunmi Ibrahim Olamiposi] (https://github.com/HighBee20)
 - [Bayo Alagbe] (https://github.com/Ebaylee)
-- 
-- 
+- [Ojo Justinah Olanireti] (https://github.com/tinnarajngn-glitch)
+- [Jennifer Chinonso Ephraim] (https://github.com/borapixel-dotcom)
 - 
 
 ## Components and who worked on them:
