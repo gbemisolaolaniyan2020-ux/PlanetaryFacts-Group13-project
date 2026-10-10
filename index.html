@@ -7,7 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- ===== Table header (issue #11) ===== -->
+    <section class="planet-facts" aria-labelledby="facts-title">
+      <h2 id="facts-title">Planetary Facts at a Glance</h2>
+      <p>Below is a comparative table of major planets in our solar system. The data highlights key physical properties used by astronomers and researchers worldwide.</p>
+      <p class="facts-source">Data about the planets of our solar system (Planetary facts taken from NASA)</p>
+      <div class="table-wrap">
+        <table class="planet-table">
+          <thead>
+            <tr>
+              <th colspan="2" scope="colgroup"><span class="visually-hidden">Category</span></th>
+              <th scope="col">Name</th>
+              <th scope="col">Mass (10<sup>24</sup> kg)</th>
+              <th scope="col">Diameter (km)</th>
+            </tr>
+          </thead>
+          <tbody id="planet-rows"></tbody>
+        </table>
+      </div>
+    </section>
+    <!-- ===== End table header ===== -->
 
     <script src="script.js"></script>
 </body>
