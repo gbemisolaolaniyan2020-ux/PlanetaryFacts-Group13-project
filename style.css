@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -24,14 +24,11 @@
   overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
 }
 .planet-facts { max-width: 720px; margin: 2rem auto 0; padding: 0 1rem; }
-.facts-header h2 { color: var(--facts-title); font-size: 1.25rem; margin: 0 0 0.5rem; }
-.facts-header p { color: var(--facts-text); font-size: 0.8rem; line-height: 1.5; margin: 0 0 1rem; }
+.planet-facts h2 { color: var(--facts-title); font-size: 1.25rem; margin: 0 0 0.5rem; }
+.planet-facts p { color: var(--facts-text); font-size: 0.8rem; line-height: 1.5; margin: 0 0 1rem; }
+.planet-facts .facts-source { color: var(--caption-text); font-weight: 600; font-size: 0.75rem; }
 .table-wrap { overflow-x: auto; }
 .planet-table { width: 100%; border-collapse: separate; border-spacing: 0; }
-.planet-table caption {
-  text-align: left; font-weight: 600; font-size: 0.75rem;
-  color: var(--caption-text); padding-bottom: 0.75rem;
-}
 .planet-table thead th {
   background: var(--th-bg); color: var(--th-text);
   border: 1px solid var(--th-border);
@@ -45,9 +42,9 @@
 }
 @media (max-width: 640px) {
   .planet-facts { padding: 0 0.75rem; }
-  .facts-header h2 { font-size: 1.1rem; }
-  .facts-header p { font-size: 0.7rem; }
-  .planet-table caption { font-size: 0.65rem; }
+  .planet-facts h2 { font-size: 1.1rem; }
+  .planet-facts p { font-size: 0.7rem; }
+  .planet-facts .facts-source { font-size: 0.65rem; }
   .planet-table thead th { padding: 0.6rem 0.35rem; font-size: 0.6rem; }
 }
 /* ===== End table header ===== */
