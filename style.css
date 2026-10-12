@@ -1,49 +1,72 @@
-* {
-:root{
-    --background: #F6F8FF;
-    --searchbar: #0079FF;
-    --planetcardbg: #FFFFFF;
-    --planetfactstext: #164BAF;
-    --tablehead: #164BAF;
-    --colandrowspanbg: #D1E3FF;
-    --footertxt: #4B6A9B;
+:root {
+  --bg-page: #F6F8FF;
+  --surface: #FFFFFF;
+  --card-shadow: 0 16px 30px -10px #4660BB33;
+  --no-results-shadow: 0 16px 30px -10px #D1E3FF;
+
+  --text-heading: #2B3442;      
+  --text-muted: #4B6A9B;        
+  --text-stat: #4B6A9B;         
+  --text-theme-label: #4B6A9B;
+  --section-title: #164BAF;     
+  --section-text: #0F2A44;     
+  --table-caption: #0F2A44;
+  --footer-text: #4B6A9B;
+
+  --accent: #0079FF;
+  --on-accent: #FFFFFF;
+  --error: #FF5252;
+
+
+  --stats-bg: #F2F7FF;
+
+  --table-head-bg: #164BAF;
+  --table-head-text: #FFFFFF;
+  --table-group-bg: #D1E3FF;
+  --table-cell-bg: #F2F7FF;
+  --table-text: #212121;
+  --table-border: #FFFFFF;
+  --table-outline: transparent;
+
+  --icon-filter: none;
 }
 
-[data-theme="dark"]{
-  --background:#0b1220; 
-  --surface:#141d31; 
-  --text:#e8eefc; 
-  --muted:#9db0d6;
-  --accent:#3b9dff; 
-  --head:#22439a; 
-  --cell:#1b2c52; 
-  --cell2:#111a2f;
-  --border:#26365c; 
-  --shadow:0 4px 18px rgba(0,0,0,.5);
+
+:root[data-theme="dark"] {
+  --bg-page: #141D2F;
+  --surface: #1E2A47;
+  --card-shadow: none;
+  --no-results-shadow: none;
+
+  --text-heading: #FFFFFF;
+  --text-muted: #90A4D4;
+  --text-stat: #FFFFFF;
+  --text-theme-label: #90A4D4;
+  --section-title: #FFFFFF;
+  --section-text: #90A4D4;
+  --table-caption: #D1E3FF;
+  --footer-text: #D1E3FF;
+
+  --stats-bg: #141D2F;
+
+  --table-head-bg: #141D2F;
+  --table-head-text: #FFFFFF;
+  --table-group-bg: #90A4D4;
+  --table-cell-bg: #F2F7FF;
+  --table-text: #212121;
+  --table-border: #FFFFFF;
+  --table-outline: #FFFFFF;
+
+  --icon-filter: brightness(0) invert(1);
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
-/* ===== Table header (issue #11) ===== */
-:root {
-  --facts-title: #2a56c6;
-  --facts-text: #4a5578;
-  --caption-text: #1b2138;
-  --th-bg: #2347a8;
-  --th-text: #ffffff;
-  --th-border: transparent;
-}
-:root[data-theme="dark"] {
-  --facts-title: #ffffff;
-  --facts-text: #a9b3d1;
-  --caption-text: #ffffff;
-  --th-bg: #12172b;
-  --th-text: #ffffff;
-  --th-border: #ffffff;
-}
+
 .visually-hidden {
   position: absolute; width: 1px; height: 1px;
   overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
