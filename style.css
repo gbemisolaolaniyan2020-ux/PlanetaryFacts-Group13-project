@@ -68,24 +68,123 @@
 
 
 .visually-hidden {
-  position: absolute; width: 1px; height: 1px;
-  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
-.planet-facts { max-width: 720px; margin: 2rem auto 0; padding: 0 1rem; }
-.planet-facts h2 { color: var(--facts-title); font-size: 1.25rem; margin: 0 0 0.5rem; }
-.planet-facts p { color: var(--facts-text); font-size: 0.8rem; line-height: 1.5; margin: 0 0 1rem; }
-.planet-facts .facts-source { color: var(--caption-text); font-weight: 600; font-size: 0.75rem; }
-.table-wrap { overflow-x: auto; }
-.planet-table { width: 100%; border-collapse: separate; border-spacing: 0; }
-.planet-table thead th {
-  background: var(--th-bg); color: var(--th-text);
-  border: 1px solid var(--th-border);
-  padding: 0.9rem 1rem; font-size: 0.7rem; font-weight: 700; text-align: center;
+.facts-section {
+    width: 100%;
+    margin-top: 48px;
 }
-.planet-table thead th:first-child { border-top-left-radius: 12px; }
-.planet-table thead th:last-child { border-top-right-radius: 12px; }
 
-@media (max-width: 1024px) {
+.facts-section h2 {
+    color: var(--section-title);
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.facts-description {
+  margin-bottom: 32px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--section-text);
+}
+
+.table-caption {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--section-text);
+}
+
+.table-wrapper {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+#planet-table {
+  width: 100%;
+  table-layout: fixed;       
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+#planet-table th,
+#planet-table td {
+    height: 60px;
+  padding: 0 8px;
+  border-right: 2px solid var(--table-border);
+  border-bottom: 2px solid var(--table-border);
+  vertical-align: middle;
+  overflow-wrap: break-word;
+}
+
+#planet-table tr > :last-child{
+    border-right: 0;
+}
+
+#planet-table tbody tr:last-child > *{
+    border-bottom: 0;
+}
+.col-group,
+.col-subgroup {
+  width: 17.8%;
+}
+
+#planet-table thead th {
+  background-color: var(--table-head-bg);
+  border-color: var(--table-border);
+  font-weight: 700;
+  color: var(--table-head-text);
+}
+
+thead th[col] {
+    border-right: 2px solid var(--table-border);
+}
+
+#planet-table tbody th {
+  background-color: (var(--table-group-bg));
+  font-weight: 700;
+  color: var(--table-text);
+}
+
+#planet-table td {
+  background-color: var(--table-cell-bg);
+  color: var(--table-text);
+  font-weight: 500;
+
+}
+
+.two-line {
+  display: inline-block;
+  width: min-content;
+}
+
+#planet-table thead tr > :first-child {
+  border-top-left-radius: 10px;
+}
+#planet-table thead tr > :last-child {
+  border-top-right-radius: 10px;
+}
+#planet-table tbody tr:last-child > :first-child {
+  border-bottom-left-radius: 10px;
+}
+#planet-table tbody tr:last-child > :last-child {
+  border-bottom-right-radius: 10px;
+}
+
+/* @media (max-width: 1024px) {
   .planet-facts { max-width: 640px; }
 }
 @media (max-width: 640px) {
@@ -94,6 +193,6 @@
   .planet-facts p { font-size: 0.7rem; }
   .planet-facts .facts-source { font-size: 0.65rem; }
   .planet-table thead th { padding: 0.6rem 0.35rem; font-size: 0.6rem; }
-}
-/* ===== End table header ===== */
+} */
+
 
