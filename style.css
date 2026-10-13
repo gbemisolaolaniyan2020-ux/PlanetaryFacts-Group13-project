@@ -1,4 +1,8 @@
+
+
 :root {
+    color-scheme: light;
+
     --page-background: #f5f7fc;
     --table-header: #2055b3;
     --category-background: #cdddf7;
@@ -6,91 +10,168 @@
     --text-color: #171717;
     --border-color: #ffffff;
     --hover-background: #e5edfa;
+    --button-background: #2055b3;
+    --button-text: #ffffff;
 }
-const themeToggle = document.querySelector("#theme-toggle");
 
-themeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-});
-*{
 
+
+body.dark-mode {
+    color-scheme: dark;
+
+    --page-background: #0f172a;
+    --table-header: #2563b8;
+    --category-background: #263b5c;
+    --cell-background: #17243a;
+    --text-color: #f1f5f9;
+    --border-color: #334155;
+    --hover-background: #223451;
+    --button-background: #3b82f6;
+    --button-text: #ffffff;
+}
+
+
+
+* {
     box-sizing: border-box;
-
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--page-background);
+    color: var(--text-color);
+    line-height: 1.5;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
 
 .planetary-facts {
     width: 100%;
     max-width: 1100px;
+    min-width: 0;
     margin: 0 auto;
     padding: 40px 20px;
+}
+
+.planetary-facts h1 {
+    margin: 0 0 24px;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+
+
+#theme-toggle {
+    display: block;
+    margin: 0 auto 24px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--button-background);
+    color: var(--button-text);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#theme-toggle:hover {
+    opacity: 0.88;
+}
+
+#theme-toggle:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
 }
 
 
 
 .planet-table-wrapper {
     width: 100%;
+    max-width: 100%;
+    min-width: 0;
     margin: 0;
     overflow-x: auto;
+    overscroll-behavior-x: contain;
+    border-radius: 10px;
+    -webkit-overflow-scrolling: touch;
 }
+
 
 
 .planet-table {
     width: 100%;
     min-width: 700px;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
     text-align: center;
 }
 
 .planet-table caption {
-    margin-bottom: 12px;
+    padding: 0 0 12px;
+    color: var(--text-color);
     font-weight: 600;
     text-align: left;
 }
 
-
 .planet-table th,
 .planet-table td {
     padding: 14px 16px;
-    border: 1px solid #d9e2ec;
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    overflow-wrap: break-word;
 }
 
 .planet-table thead th {
-    background-color: #1554b3;
+    background-color: var(--table-header);
     color: #ffffff;
     font-weight: 600;
+    border-top: 1px solid var(--border-color);
 }
-
 
 .planet-table tbody th {
-    background-color: #dce9f8;
-    color: #172b4d;
+    background-color: var(--category-background);
+    color: var(--text-color);
     font-weight: 600;
+    vertical-align: middle;
 }
-
 
 .planet-table tbody td {
-    background-color: #f7faff;
-    color: #172b4d;
+    background-color: var(--cell-background);
+    color: var(--text-color);
 }
 
+.planet-table th:first-child,
+.planet-table td:first-child {
+    border-left: 1px solid var(--border-color);
+}
 
 .planet-table tbody tr:hover td {
-    background-color: #eaf2fc;
+    background-color: var(--hover-background);
 }
+
 
 
 @media (max-width: 768px) {
-
     .planetary-facts {
         padding: 30px 15px;
     }
 
     .planetary-facts h1 {
-        font-size: 1.7rem;
+        font-size: 1.75rem;
     }
 
-    .planetary-facts > p {
-        font-size: 0.95rem;
+    .planet-table {
+        min-width: 680px;
     }
 
     .planet-table th,
@@ -102,22 +183,37 @@ themeToggle.addEventListener("click", () => {
 
 
 @media (max-width: 480px) {
-
     .planetary-facts {
-        padding: 25px 10px;
+        padding: 24px 10px;
     }
 
     .planetary-facts h1 {
-        font-size: 1.4rem;
+        font-size: 1.45rem;
     }
 
-    .planetary-facts > p {
-        font-size: 0.9rem;
+    .planet-table {
+        min-width: 650px;
     }
 
     .planet-table th,
     .planet-table td {
         padding: 10px 8px;
         font-size: 0.8rem;
+    }
+
+    #theme-toggle {
+        max-width: 100%;
+    }
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    body {
+        transition: none;
     }
 }
