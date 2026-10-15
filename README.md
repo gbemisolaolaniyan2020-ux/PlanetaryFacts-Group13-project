@@ -47,8 +47,8 @@ The planetary Facts website was developed collaboratively by Group 13. Each team
 * GBEMISOLA OLANIYAN (Team Lead)
  Project Setup and Integration, Repository setup, project structure, JavaScript integration, API data fetching, code integration, final pull request review and merges, final testing and deployment.  
 
-* SEKINAT OLAIDE (Assistant Team Lead)
-Footer and About Section, Development of the footer, team information, contributor links, and responsive styling. 
+* BAYO ALAGBE (Assistant Team Lead)
+Planetary Table Content, Display and organization of planetary information in the table, including responsive styling, review pull request and merge issues. 
 
 * ADEWUYI SOPHIA 
 Planet header icon and Theme Toggle, Implementation of header icon and the dark/light mode toggle functionality.
@@ -65,8 +65,8 @@ Second planetary card stat section (the gravity, mass, period and the temperatur
 * PEACE OMOEFE
 Planetary Table Header, Development and styling of the planetary table header information and responsive layout.
 
-* BAYO ALAGBE
-Planetary Table Content, Display and organization of planetary information in the table, including responsive styling.
+* SEKINAT OLAIDE 
+Footer and About Section, Development of the footer, team information, contributor links, and responsive styling.
 
 
 ## How to run the project locally
