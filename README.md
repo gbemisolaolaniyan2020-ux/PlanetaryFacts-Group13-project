@@ -30,7 +30,8 @@ The project is a responsive web app that fetches planet data from an API and dis
 - [Bayo Alagbe] (https://github.com/Ebaylee)
 - [Ojo Justinah Olanireti] (https://github.com/tinnarajngn-glitch)
 - [Jennifer Chinonso Ephraim] (https://github.com/borapixel-dotcom)
-- 
+- [Adewuyi Sophia] (https://github.com/sophiaadewuyi25-droid)
+- [Peace Omoefe Princess Umukoro] (https://github.com/Upshure/Peace-Umukoro-/settings)
 
 ## Components and who worked on them:
 
