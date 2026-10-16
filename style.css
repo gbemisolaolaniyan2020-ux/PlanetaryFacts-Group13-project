@@ -265,7 +265,7 @@ thead th[col] {
   border-bottom-right-radius: 10px;
 }
 
-/* @media (max-width: 1024px) {
+@media (max-width: 1024px) {
   .planet-facts { max-width: 640px; }
 }
 
@@ -456,6 +456,4 @@ body {
   .planet-facts p { font-size: 0.7rem; }
   .planet-facts .facts-source { font-size: 0.65rem; }
   .planet-table thead th { padding: 0.6rem 0.35rem; font-size: 0.6rem; }
-} */
-
-
+}
