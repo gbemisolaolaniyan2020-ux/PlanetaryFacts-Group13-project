@@ -29,10 +29,10 @@ The project is a responsive web app that fetches planet data from an API and dis
 
 
 ## Group Members
-- [Gbemisola Olaniyan] (https://github.com/gbemisolaolaniyan2020-ux)-Team lead
-- [Sekinat Olaide Abdulrazaq] (https://github.com/olaidesekinat04-byte)-Assistant Team Lead
+- [Gbemisola Olaniyan] (https://github.com/gbemisolaolaniyan2020-ux) -Team lead
+- [Bayo Alagbe] (https://github.com/Ebaylee) -Assistant Team Lead
+- [Sekinat Olaide Abdulrazaq] (https://github.com/olaidesekinat04-byte)
 - [Showunmi Ibrahim Olamiposi] (https://github.com/HighBee20)
-- [Bayo Alagbe] (https://github.com/Ebaylee)
 - [Ojo Justinah Olanireti] (https://github.com/tinnarajngn-glitch)
 - [Jennifer Chinonso Ephraim] (https://github.com/borapixel-dotcom)
 - [Adewuyi Sophia] (https://github.com/sophiaadewuyi25-droid)
@@ -55,9 +55,6 @@ Planet header icon and Theme Toggle, Implementation of header icon and the dark/
 
 * OJO JUSTINAH
 Search Bar, Implementation and styling of the search input, search functionality, and responsive layout. 
-
-* JENNIFER CHINONSO
-First planetary card stat section (the earth image section, the h2 and p info), Development and styling of the first planetary information card section, including responsiveness.
 
 * SHOWUNMI IBRAHIM
 Second planetary card stat section (the gravity, mass, period and the temperature icons part),  Development and styling of the second planetary information card section, including responsiveness.
@@ -108,8 +105,12 @@ Footer and About Section, Development of the footer, team information, contribut
 - Tasks were tracked on the GitHub Projects board
 
 ## The live deployment link
-()
 
+Live Website: 
+[View PlanetaryFacts]()
+
+GitHub Repository: 
+https://github.com/gbemisolaolaniyan2020-ux/PlanetaryFacts-Group13-project.git
 
 
 ## Project Credits
