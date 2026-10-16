@@ -1,3 +1,83 @@
-*{
+* {
     box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: #f5f7ff;
+    transition: background-color 200ms ease;
+}
+
+.planet-header {
+    width: 100%;
+    padding: 4px 5%;
+    background: #f5f7ff;
+    transition: background-color 200ms ease;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 73px;
+    height: 47px;
+    display: block;
+}
+
+.theme-icon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.theme-icon img,
+.theme-icon svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+.sun-icon {
+    display: none !important;
+}
+
+.theme-label {
+    color: #4b6a9b;
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dark-theme {
+    background: #141d2f;
+}
+
+.dark-theme .planet-header {
+    background: #141d2f;
+}
+
+.dark-theme .logo img {
+    filter: brightness(0) invert(1);
+}
+
+.dark-theme .theme-label,
+.dark-theme .sun-icon {
+    color: #9eadd1;
+}
+
+.dark-theme .moon-icon {
+    display: none;
+}
+
+.dark-theme .sun-icon {
+    display: block !important;
 }
