@@ -1,11 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planetary Facts At A Glance</title>
+
+    <title>Planetary Facts at a Glance</title>
+
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
     <script src="script.js" defer></script>
     <header class="planet-header">
@@ -23,5 +28,213 @@
             </button>
         </div>
     </header>
+    <main>
+        <section
+            class="planetary-facts"
+            aria-labelledby="planetary-facts-heading"
+        >
+            <h1 id="planetary-facts-heading">
+                Planetary Facts at a Glance
+            </h1>
+
+            <button
+                id="theme-toggle"
+                type="button"
+                aria-pressed="false"
+            >
+                🌙 Switch to Dark Mode
+            </button>
+
+            <figure class="planet-table-wrapper">
+                <table class="planet-table">
+                    <caption>
+                        Mass and diameter of the planets
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th colspan="2" scope="colgroup">
+                                Planet Types
+                            </th>
+                            <th scope="col">Name</th>
+                            <th scope="col">
+                                Mass (10<sup>24</sup> kg)
+                            </th>
+                            <th scope="col">Diameter (km)</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="rowgroup" rowspan="4" colspan="2">
+                                Terrestrial Planets
+                            </th>
+                            <td>Mercury</td>
+                            <td>0.000174</td>
+                            <td>4,878</td>
+                        </tr>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Planetary Facts At A Glance</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+  </head>
+    <body>
+      <main>  
+    
+       <section class="facts-section">
+
+           <div class="primary-stats">
+                                    <div class="stat">
+                                        <span>Gravity</span>
+                                        <strong id="planet-gravity">9.8</strong>
+                                    </div>
+
+                                    <div class="stat">
+                                        <span>Mass</span>
+                                        <strong id="planet-mass">5.972</strong>
+                                    </div>
+
+                                    <div class="stat">
+                                        <span>Period</span>
+                                        <strong id="planet-period">365</strong>
+                                    </div>
+
+                                </div>
+
+                                <div class="secondary-stats">
+                                    <div class="stat">
+                                    <span aria-hidden="true">
+                                        <img src="assets/icons/temperature icon.svg" alt="temperature icon" ></span> 
+                                        <strong id="planet-temperature">288</strong> 
+                                    </div>
+
+                                    <div class="stat">
+                                        <span aria-hidden="true"> 
+                                            <img src="assets/icons/half moon.svg" alt="moon"></span>
+                                            <strong id="planet-moons">1</strong>
+                                    </div>
+
+                                    <div class="stat">
+                                        <span aria-hidden="true"><img src="assets/icons/diameter.svg" alt="diameter"></span>
+                                        <strong id="planet-diameter">12756</strong>
+                                    </div>
+
+                                    <div class="stat">
+                                        <span aria-hidden="true"><img src="assets/icons/company Icon.svg" alt=""></span>
+                                        <strong id="planet-rotation">149.6</strong>
+                                    </div>
+                                </div>
+
+              <h2>Planetary Facts at a Glance</h2>
+
+              <p class="facts-description">
+              Below is a comparative table of major planets in our solar system.
+              The data highlights key physical properties used by astronomers and researchers worldwide. </p>
+              
+              <p class="table-caption" id="table-caption">
+              Data about the planets of our solar system (Planetary facts taken from NASA)</p>
+                            
+            <div class="table-wrapper">
+                <table id="planet-table" aria-labelledby="table-caption">
+                  <colgroup>
+                    <col class="col-group">
+                    <col class="col-subgroup">
+                    <col>
+                    <col>
+                    <col>
+                  </colgroup>
+
+                    <thead>
+                      <tr>
+                        <th scope="col" colspan="2"><span class="visually-hidden">Category</span></th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Mass (10 24 kg)</th>
+                        <th scope="col">Diameter (km)</th>
+                      </tr>
+                    </thead>
+                    <tbody id="planet-rows"></tbody>
+                </table>
+              </div>
+        </section>
+      
+      
+
+      
+        
+          
+      </main>
+
+                        <tr>
+                            <td>Venus</td>
+                            <td>0.00256</td>
+                            <td>12,104</td>
+                        </tr>
+
+                        <tr>
+                            <td>Earth</td>
+                            <td>0.00315</td>
+                            <td>12,756</td>
+                        </tr>
+
+                        <tr>
+                            <td>Mars</td>
+                            <td>0.000338</td>
+                            <td>6,794</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="rowgroup" rowspan="4">
+                                Jovian Planets
+                            </th>
+                            <th scope="rowgroup" rowspan="2">
+                                Gas Giants
+                            </th>
+                            <td>Jupiter</td>
+                            <td>1.0</td>
+                            <td>142,984</td>
+                        </tr>
+
+                        <tr>
+                            <td>Saturn</td>
+                            <td>0.299</td>
+                            <td>120,536</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="rowgroup" rowspan="2">
+                                Ice Giants
+                            </th>
+                            <td>Uranus</td>
+                            <td>0.0457</td>
+                            <td>51,118</td>
+                        </tr>
+
+                        <tr>
+                            <td>Neptune</td>
+                            <td>0.0539</td>
+                            <td>49,528</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="rowgroup" colspan="2">
+                                Dwarf Planets
+                            </th>
+                            <td>Pluto</td>
+                            <td>0.0000069</td>
+                            <td>2,370</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </figure>
+        </section>
+    </main>
 </body>
+</html>
+    
+      <script src="script.js"></script>
+    </body>
 </html>
