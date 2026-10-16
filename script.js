@@ -1,1 +1,0 @@
-const API_URL = "https://anurella.github.io/json/planet.json";
