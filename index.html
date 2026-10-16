@@ -1,69 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Planetary Facts | Explore Our Solar System</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-        <body>
-            <header class="site-header">
-                <div class="container">
-                    <a href="#" class="logo" aria-label="PlanetaryFacts home">
-                        <img src="assets/icons/logo_black.svg" alt="Planetary Facts logo">
-                    </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">
-                        <span id="theme-label">DARK</span>
-                        <span id="theme-icon"><img id="theme-icon-img" src="assets/icons/theme Icon.svg"  alt=""></span>
-                    </button>
-                </div>
-            </header>
+    <title>Planetary Facts at a Glance</title>
 
-            <main class="main-content">
-                <div class="container">
-                    <section class="search-section" aria-label="Search planets">
-                        <form id="planet-search-form" class="search-form">
-                            <label for="planet-search" class="visually-hidden">
-                                Search planet name
-                            </label>
-                            <div class="search-box">
-                                <span class="search-icon" aria-hidden="true">
-                                    <img src="assets/icons/search Icon.svg" alt="Search icon">
-                                </span>
-                                <input type="search" id="planet-search" name="planet" placeholder="Search planet name..." autocomplete="off">
-                                <span class="search-error" id="search-error" role="alert" hidden>No results</span>
-                                <button type="submit">
-                                    Search
-                                </button> 
-                            </div>
-                        </form>
-                        <p class="search-status" id="search-status" role="status"></p>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
 
-                    </section>
+<body>
+    <script src="script.js" defer></script>
+    <header class="planet-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/icons/Vector logo.svg" alt="Planetary Facts home">
+            </a>
+            <button class="theme-icon" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+                <span class="theme-label">Dark</span>
+                <img class="moon-icon" src="assets/icons/Theme Icon.svg" alt="" aria-hidden="true">
+                <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4" fill="currentColor"></circle>
+                    <path d="M12 1v3m0 16v3M1 12h3m16 0h3M4.22 4.22l2.12 2.12m11.32 11.32 2.12 2.12m0-15.56-2.12 2.12M6.34 17.66l-2.12 2.12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section
+            class="planetary-facts"
+            aria-labelledby="planetary-facts-heading"
+        >
+            <h1 id="planetary-facts-heading">
+                Planetary Facts at a Glance
+            </h1>
 
-                    <section>
-                            <div class="no-results" id="no-results" hidden>
-                                <h2 class="no-results-title">No results found!</h2>
-                                <p class="no-results-text">
-                                    We couldn't find any planet matching your search.
-                                    Please double-check the name and try again.
-                                </p>
-                            </div>
-                        <div class="planet-overview" aria-live="polite">
+            <button
+                id="theme-toggle"
+                type="button"
+                aria-pressed="false"
+            >
+                🌙 Switch to Dark Mode
+            </button>
 
-                            
-                            
-                            <img src="assets/images/planet earth round.jpg" alt="planet earth image"
-                            id="planet-image" class="planet-image">
+            <figure class="planet-table-wrapper">
+                <table class="planet-table">
+                    <caption>
+                        Mass and diameter of the planets
+                    </caption>
 
-                            <div class="planet-details">
-                                <h1 id="planet-name">Earth</h1>
-                                <p class="planet-category" id="planet-category">Terrestrial</p>
-                                <p id="planet-description">The only known planet to support life, with liquid water on its surface.</p>
+                    <thead>
+                        <tr>
+                            <th colspan="2" scope="colgroup">
+                                Planet Types
+                            </th>
+                            <th scope="col">Name</th>
+                            <th scope="col">
+                                Mass (10<sup>24</sup> kg)
+                            </th>
+                            <th scope="col">Diameter (km)</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="rowgroup" rowspan="4" colspan="2">
+                                Terrestrial Planets
+                            </th>
+                            <td>Mercury</td>
+                            <td>0.000174</td>
+                            <td>4,878</td>
+                        </tr>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Planetary Facts At A Glance</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+  </head>
+    <body>
+      <main>  
+    
+       <section class="facts-section">
 
                                 <div class="primary-stats">
                                     <div class="stat">

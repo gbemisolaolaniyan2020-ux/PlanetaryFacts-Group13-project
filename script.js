@@ -1,3 +1,5 @@
+
+
 const API_URL = "https://anurella.github.io/json/planet.json";
 
 const searchForm = document.querySelector("#planet-search-form");

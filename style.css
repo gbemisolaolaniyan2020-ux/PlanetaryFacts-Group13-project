@@ -1,4 +1,37 @@
 :root {
+    color-scheme: light;
+
+    --page-background: #f5f7fc;
+    --table-header: #2055b3;
+    --category-background: #cdddf7;
+    --cell-background: #f0f5fd;
+    --text-color: #171717;
+    --border-color: #ffffff;
+    --hover-background: #e5edfa;
+    --button-background: #2055b3;
+    --button-text: #ffffff;
+}
+
+
+
+body.dark-mode {
+    color-scheme: dark;
+
+    --page-background: #0f172a;
+    --table-header: #2563b8;
+    --category-background: #263b5c;
+    --cell-background: #17243a;
+    --text-color: #f1f5f9;
+    --border-color: #334155;
+    --hover-background: #223451;
+    --button-background: #3b82f6;
+    --button-text: #ffffff;
+}
+
+
+
+
+:root {
   --bg-page: #F6F8FF;
   --surface: #FFFFFF;
   --card-shadow: 0 16px 30px -10px #4660BB33;
@@ -659,145 +692,124 @@ thead th[col] {
 
 
 @media (max-width: 480px) {
-  body {
-    padding-block: 24px;
-  }
+    .planetary-facts {
+        padding: 24px 10px;
+    }
 
-  .container {
-    padding-inline: 16px;
-  }
+    .planetary-facts h1 {
+        font-size: 1.45rem;
+    }
 
- 
-  .site-header .container {
-    padding-bottom: 24px;
-  }
+    .planet-table {
+        min-width: 650px;
+    }
 
+    .planet-table th,
+    .planet-table td {
+        padding: 10px 8px;
+        font-size: 0.8rem;
+    }
 
-  #theme-label {
-    font-size: 12px;
-    letter-spacing: 2px;
-  }
-
-
-  .search-section {
-    margin-bottom: 24px;
-  }
-
-  .search-box {
-    height: 56px;
-    gap: 8px;
-    padding: 0 8px 0 16px;
-  }
-
-  .search-icon img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .search-box button {
-    height: 40px;
-    padding: 0 16px;
-    font-size: 13px;
-  }
-
- 
-  .planet-overview {
-    display: grid;
-    grid-template-columns: 64px 1fr;
-    column-gap: 16px;
-    row-gap: 0;
-    padding: 24px 16px;
-  }
-
-  .planet-details {
-    display: contents;           
-  }
-
-  .planet-image {
-    grid-column: 1;
-    grid-row: 1 / 3;
-    align-self: center;
-    width: 64px;
-    height: 64px;
-  }
-
-  #planet-name {
-    grid-column: 2;
-    grid-row: 1;
-    align-self: end;
-    margin-bottom: 0;
-    font-size: 22px;
-  }
-
-  .planet-category {
-    grid-column: 2;
-    grid-row: 2;
-    align-self: start;
-    margin-bottom: 0;
-    font-size: 14px;
-  }
-
-  #planet-description {
-    grid-column: 1 / -1;
-    grid-row: 3;
-    margin-top: 16px;
-    font-size: 13px;
-  }
-
-  .primary-stats {
-    display: grid;               
-    grid-template-columns: 1fr;
-    grid-column: 1 / -1;
-    grid-row: 4;
-    gap: 12px;
-    margin-top: 20px;
-    padding: 16px 20px;
-  }
-
-  .secondary-stats {
-    grid-column: 1 / -1;
-    grid-row: 5;
-    grid-template-columns: 1fr; 
-    margin-top: 20px;
-  }
-
-  .facts-section {
-    margin-top: 32px;
-  }
-
-  .facts-description {
-    margin-bottom: 24px;
-  }
-
-  .table-caption {
-    margin-bottom: 16px;
-    font-size: 14px;
-  }
-
-  #planet-table {
-    font-size: 10px;
-  }
-
-  #planet-table th,
-  #planet-table td {
-    height: 40px;
-    padding: 0 4px;
-  }
-
-  .col-group,
-  .col-subgroup {
-    width: 20%;                 
-  }
-
-
-  .site-footer .container {
-    grid-template-columns: 1fr;
-  }
-
-  #planet-table col:nth-child(4),
-  #planet-table tr > :nth-last-child(2) {
-    display: none;
-  }
-    
-  
+    #theme-toggle {
+        max-width: 100%;
+    }
 }
+
+
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    body {
+        transition: none;
+    }
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: #f5f7ff;
+    transition: background-color 200ms ease;
+}
+
+.planet-header {
+    width: 100%;
+    padding: 4px 5%;
+    background: #f5f7ff;
+    transition: background-color 200ms ease;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 73px;
+    height: 47px;
+    display: block;
+}
+
+.theme-icon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.theme-icon img,
+.theme-icon svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+.sun-icon {
+    display: none !important;
+}
+
+.theme-label {
+    color: #4b6a9b;
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dark-theme {
+    background: #141d2f;
+}
+
+.dark-theme .planet-header {
+    background: #141d2f;
+}
+
+.dark-theme .logo img {
+    filter: brightness(0) invert(1);
+}
+
+.dark-theme .theme-label,
+.dark-theme .sun-icon {
+    color: #9eadd1;
+}
+
+.dark-theme .moon-icon {
+    display: none;
+}
+
+.dark-theme .sun-icon {
+    display: block !important;
+}
+@media (max-width: 640px) {
+  .planet-facts { padding: 0 0.75rem; }
+  .planet-facts h2 { font-size: 1.1rem; }
+  .planet-facts p { font-size: 0.7rem; }
+  .planet-facts .facts-source { font-size: 0.65rem; }
+  .planet-table thead th { padding: 0.6rem 0.35rem; font-size: 0.6rem; }
+} 
