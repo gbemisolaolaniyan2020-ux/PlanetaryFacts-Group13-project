@@ -106,7 +106,7 @@ Footer and About Section, Development of the footer, team information, contribut
 ## The live deployment link
 
 Live Website: 
-[View PlanetaryFacts]()
+[View PlanetaryFacts](https://group13-capstoneplanetproject.netlify.app)
 
 GitHub Repository: 
 https://github.com/gbemisolaolaniyan2020-ux/PlanetaryFacts-Group13-project.git
