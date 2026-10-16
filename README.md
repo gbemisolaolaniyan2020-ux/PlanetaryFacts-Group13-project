@@ -34,7 +34,6 @@ The project is a responsive web app that fetches planet data from an API and dis
 - [Sekinat Olaide Abdulrazaq] (https://github.com/olaidesekinat04-byte)
 - [Showunmi Ibrahim Olamiposi] (https://github.com/HighBee20)
 - [Ojo Justinah Olanireti] (https://github.com/tinnarajngn-glitch)
-- [Jennifer Chinonso Ephraim] (https://github.com/borapixel-dotcom)
 - [Adewuyi Sophia] (https://github.com/sophiaadewuyi25-droid)
 - [Peace Omoefe Princess Umukoro] (https://github.com/Upshure)
 
