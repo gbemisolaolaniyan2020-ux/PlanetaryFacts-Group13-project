@@ -4,6 +4,76 @@
 
 }
 
+.search-section{
+    margin-bottom: 40px;
+}
+
+.search-form{
+    width: 100%;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 68px;
+    padding: 0 10px 0 24px;
+    background-color: var(--surface);
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+}
+
+.search-box:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.search-icon {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.search-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+#planet-search{
+    flex: 1;
+    height: 100%;
+    min-width: 0;
+    padding: 0 12px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: Space Mono;
+    font-size: 16px;
+    color: var(--text-heading);
+   
+}
+
+#planet-search::placeholder{
+    color: var(--text-muted);
+}
+
+.search-box button {
+    flex-shrink: 0;
+    height: 48px;
+    padding: 0 24px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--accent);
+    color: var(--on-accent);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Space Mono;
+}
+
+
+.search-box button:hover {
+  opacity: 0.9;
+}
+
 .planetary-facts {
     width: 100%;
     max-width: 1100px;

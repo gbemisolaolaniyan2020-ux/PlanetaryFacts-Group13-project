@@ -12,12 +12,30 @@
 </head>
 
 <body>
-    <header> 
-
-    </header>
+  
 
     <main>
 
+        <section class="search-section" aria-label="Search planets">
+                        <form id="planet-search-form" class="search-form">
+                            <label for="planet-search" class="visually-hidden">
+                                Search planet name
+                            </label>
+                            <div class="search-box">
+                                <span class="search-icon" aria-hidden="true">
+                                    <img src="assets/icons/search Icon.svg" alt="Search icon">
+                                </span>
+                                <input type="search" id="planet-search" name="planet" placeholder="Search planet name..." autocomplete="off">
+                                <span class="search-error" id="search-error" role="alert" hidden>No results</span>
+                                <button type="submit">
+                                    Search
+                                </button> 
+                            </div>
+                        </form>
+                        <p class="search-status" id="search-status" role="status"></p>
+
+                    </section>
+                    
         <section class="planetary-facts" aria-labelledby="planetary-facts-heading">
 
             
