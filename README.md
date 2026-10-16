@@ -2,7 +2,8 @@
 Capstone project recreating a planet info page from a figma design using HTML, CSS and JavaScript.
 
 ## About the Project
-The project is a responsive web app that fetches planet data from an API and displays it in a clean card and a comparison table. Users can search for a planet by name and switch between light and dark mode. Built as the TSAcademy front-end capstone project, recreating the provided Figma design.
+The project is a responsive web app that fetches planet data from an API and displays it in a clean card and a comparison table. Users can search for a planet by name and switch between light and dark mode. Built as the TSAcademy front-end capstone project (Hajime Cohort), recreating the provided Figma design.
+
 
 ## Features
 
@@ -14,6 +15,7 @@ The project is a responsive web app that fetches planet data from an API and dis
 - Responsive layout for desktop, tablet and mobile.
 - Semantic HTML and accessible labels.
 
+
 ## Technologies Used
 
 * HTML5 — Website structure and content
@@ -22,17 +24,46 @@ The project is a responsive web app that fetches planet data from an API and dis
 * Git — Version control
 * GitHub — Collaboration and project management
 * Figma — Design reference
+* Visual Studio Code
+* Planet data API
+
 
 ## Group Members
 - [Gbemisola Olaniyan] (https://github.com/gbemisolaolaniyan2020-ux) -Team lead
 - [Bayo Alagbe] (https://github.com/Ebaylee) -Assistant Team Lead
+- [Sekinat Olaide Abdulrazaq] (https://github.com/olaidesekinat04-byte)
 - [Showunmi Ibrahim Olamiposi] (https://github.com/HighBee20)
 - [Ojo Justinah Olanireti] (https://github.com/tinnarajngn-glitch)
+- [Jennifer Chinonso Ephraim] (https://github.com/borapixel-dotcom)
 - [Adewuyi Sophia] (https://github.com/sophiaadewuyi25-droid)
 - [Peace Omoefe Princess Umukoro] (https://github.com/Upshure)
-- [Sekinat Olaide Abdulrazaq] (https://github.com/olaidesekinat04-byte)
 
-## Components and who worked on them:
+
+## Project Components and who worked on them:
+The planetary Facts website was developed collaboratively by Group 13. Each team member was responsible for specific components of the website, including implementation, styling, functionality, and responsive design across mobile, tablet and desktop screens.
+
+# Components and Contributors
+
+* GBEMISOLA OLANIYAN (Team Lead)
+ Project Setup and Integration, Repository setup, project structure, JavaScript integration, API data fetching, code integration, final pull request review and merges, final testing and deployment.  
+
+* BAYO ALAGBE (Assistant Team Lead)
+Planetary Table Content, Display and organization of planetary information in the table, including responsive styling, review pull request and merge issues. 
+
+* ADEWUYI SOPHIA 
+Planet header icon and Theme Toggle, Implementation of header icon and the dark/light mode toggle functionality.
+
+* OJO JUSTINAH
+Search Bar, Implementation and styling of the search input, search functionality, and responsive layout. 
+
+* SHOWUNMI IBRAHIM
+Second planetary card stat section (the gravity, mass, period and the temperature icons part),  Development and styling of the second planetary information card section, including responsiveness.
+
+* PEACE OMOEFE
+Planetary Table Header, Development and styling of the planetary table header information and responsive layout.
+
+* SEKINAT OLAIDE 
+Footer and About Section, Development of the footer, team information, contributor links, and responsive styling.
 
 
 ## How to run the project locally
@@ -74,8 +105,21 @@ The project is a responsive web app that fetches planet data from an API and dis
 - Tasks were tracked on the GitHub Projects board
 
 ## The live deployment link
-()
 
+Live Website: 
+[View PlanetaryFacts]()
+
+GitHub Repository: 
+https://github.com/gbemisolaolaniyan2020-ux/PlanetaryFacts-Group13-project.git
+
+
+## Project Credits
+
+Built by Group 13 as part of the TSAcademy project.
+
+- [GitHub Repository](https://github.com/gbemisolaolaniyan2020-ux/PlanetaryFacts-Group13-project)
+- [TSAcademy](https://tsacademyonline.com/)
+- [Amaka N](https://amakandukwu.com/)
 
 
 
